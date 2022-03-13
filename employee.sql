@@ -5,6 +5,18 @@ CREATE TABLE employee(
 	email VARCHAR(100)
 );
 
+UPDATE employee SET name = 'Anil Pak', birthday = null, email = null WHERE id = 1;
+UPDATE employee SET name = 'Jose Sosa', birthday = null, email = null WHERE id = 2;
+UPDATE employee SET name = 'Atiba', birthday = null, email = null WHERE id = 3;
+UPDATE employee SET name = 'Ridvan Yilmaz', birthday = null, email = null WHERE id = 4;
+UPDATE employee SET name = 'MJ', birthday = null, email = null WHERE id = 5;
+
+DELETE FROM employee WHERE id = 1;
+DELETE FROM employee WHERE id = 2;
+DELETE FROM employee WHERE id = 3;
+DELETE FROM employee WHERE id = 4;
+DELETE FROM employee WHERE id = 5;
+
 --SELECT * FROM employee
 
 insert into employee (id, name, birthday, email) values (1, 'Dagmar Swanston', '1973-09-24', null);
